@@ -1,0 +1,193 @@
+:root {
+    --primary-color: #0a1118;
+    --primary-color-highlight: #233d54;
+    --bs-body-font-family: 'Prompt', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+/*
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
+*/
+
+/*
+* Custom container
+*/
+
+.container-custom {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .container-custom {
+        width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-custom {
+        width: 1340px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container-custom {
+        width: 1520px;
+    }
+}
+
+
+/*main-end*/
+
+.logo-pic {
+    width: 75px;
+}
+
+a {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.logo {
+    padding: 0px;
+}
+
+/*Hero header bottom Start  Bootstrap*/
+.hero {
+    position: relative;
+    height: 90vh;
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+@media (min-width: 1400px) {
+    .hero__heading {
+        font-size: 3.2rem;
+    }
+}
+
+
+.hero__video {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    opacity: 0.5;
+    z-index: 1;
+
+}
+
+.hero__content {
+    z-index: 1;
+}
+
+.hero-content-width {
+    max-width: 540px;
+}
+
+.hero__scroll-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: var(--bs-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.hero__scroll-btn:hover {
+    color: var(--bs-light);
+    opacity: 0.8;
+}
+
+.hero__scroll-btn .bi {
+    transition-delay: 0.8s;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    front {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+/*background image*/
+
+.header-bottom img {
+    width: 100%;
+    height: 50%;
+    /*filter:blur(px)*/
+}
+
+.header-des {
+    color: #F9FAF8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: Flex-start;
+    padding: 100px 50px;
+    gap: 8px;
+    backdrop-filter: blur(2px);
+    box-shadow: 95px;
+    background-color: rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+    max-height: 35%;
+    border-style: solid;
+    border-color: #F9FAF8;
+    border-radius: 8px;
+    /*position: absolute;*/
+}
+
+.business-name {
+    color: #F9FAF8;
+    font-size: 48px;
+}
+
+.business-des {
+    color: #F9FAF8;
+    font-size: 18px;
+}
+
+/*header section end*/
