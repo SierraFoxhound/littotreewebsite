@@ -1,11 +1,17 @@
 :root {
     --primary-color: #0a1118;
     --primary-color-highlight: #233d54;
-    --bs-body-font-family: 'Prompt', sans-serif;
+    --bs-body-font-family: 'Cabin', sans-serif;
+    --timing: 400ms;
+    --rotation: 20deg;
 }
 
 html {
     scroll-behavior: smooth;
+}
+/*TODO: Fix font*/
+body {
+    font-family: 'Cabin';
 }
 
 a {
@@ -191,3 +197,154 @@ a {
 }
 
 /*header section end*/
+
+/*Card Section*/
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    gap: 18px;
+    min-height: 100vh;
+    perspective: 1000px;
+    flex-wrap: wrap;
+}
+
+.card-container .card-custom img {
+    max-width: 100%;
+}
+
+.card-custom {
+    width: 300px;
+    aspect-ratio: 9 / 16;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: rotate var(--timing) ease;
+}
+
+.card-custom:hover {
+    rotate: x var(--rotation);
+}
+
+.card-custom::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 100;
+    background-image: radial-gradient(circle, transparent 150px, black);
+    opacity: 0;
+    transition: opacity var(--timing);
+}
+
+.card-custom:hover::before {
+    opacity: 1;
+}
+
+.card-custom::after {
+    content: "";
+    position: absolute;
+    inset: 80% 0.5rem 0.5rem;
+    translate: 0;
+    transform: translateZ(-100px);
+    background: black;
+    filter: blur(1rem);
+    z-index: 1;
+    transition: rotate var(--timing), translate var(--timing);
+}
+.card-custom:hover::after {
+    rotate: x calc(var(--rotation) * -1);
+    translate: 0 60px;
+}
+
+.bg-card-img {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    object-fit: cover;
+    object-position: -150px center;
+}
+
+.card-logo, .front-image {
+    position: absolute;
+}
+
+.card-logo {
+    z-index: 1000;
+    filter: invert(1);
+    width: 65%;
+    margin-inline: auto;
+    inset: auto 0 2rem;
+    transform: translateY(0rem) translateZ(20px);
+    transition: var(--timing);
+}
+
+.card-custom:hover .card-logo {
+    transform: translateY(-2rem) translateZ(20px);
+    rotate: x calc(var(--rotation) * -1);
+}
+
+.front-image {
+    scale: 1.125;
+    transform-origin: bottom;
+    opacity: 0;
+    z-index: 100;
+    transition: var(--timing);
+}
+
+.card-custom:hover .front-image {
+    opacity: 1;
+    transform: translateY(-2rem) translateZ(-10px);
+    rotate: x calc(var(--rotation) * -1);
+}
+
+/*Single-section*/
+
+.single-section-bl {
+    padding: 4rem 0 2rem 0;
+    background-color: #CCCCFF;
+    display: flex;
+    justify-content: center;
+}
+
+.single-section {
+    padding: 4rem 0 2rem 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.single-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.single-container-extra {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 8rem;
+}
+
+.text-box {
+    max-width: 600px;
+
+}
+.text-box-sml {
+    max-width: 300px;
+
+}
+
+/*Icon container section*/
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.icon-caption h3{
+    color: rgb(227, 174, 40);
+}
