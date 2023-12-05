@@ -71,7 +71,8 @@ a:hover {
 /*main-end*/
 
 .logo-pic {
-    width: 75px;
+    width: 10rem;
+    height: 10rem;
 }
 
 a {
@@ -335,6 +336,12 @@ a {
 
 }
 
+.text-box-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Icon container section*/
 
 .icon-container {
@@ -347,4 +354,10 @@ a {
 
 .icon-caption h3{
     color: rgb(227, 174, 40);
+}
+
+/*Commission  page*/
+
+.center-text-container {
+    max-width: 700px;
 }

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Litto Tree</title>
+    <!--Main Stylesheet-->
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+    <!--Bootstrap Css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--Lightbox css-->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <!--Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&family=Poppins:wght@300;400;500;600&family=Prompt:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/39d7944e82.js" crossorigin="anonymous"></script>
+    <!--jQuery Library-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <!--Lightbox script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</head>
+<body>
+    <div class="header-sec">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container justify-content-center ">
+    
+                <a class="navbar-brand" href="./index.html">
+                    <img class="logo-pic" src="./assets/logo-an-slow.PNG" alt="Logo">
+                    <!--<img>logo-pic-->
+                </a>
+    
+    
+            </div>
+    
+        </nav>
+        <!--Start of nav bar-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom  ">
+            <!--OLD: class="header-top"-->
+            <div class="container">
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#links-bs"
+                    aria-controls="links-bs" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center " id="links-bs"> <!--OLD: class=links-->
+                    <ul class="navbar-nav gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./commission.html">Commissions</a></li>
+                                <li><a class="dropdown-item" href="./irrigation.html">Red Bubble</a></li>
+                                <li><a class="dropdown-item" href="./welding.html">Tee Spring</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav><!--End of navbar-->
+
+        <!--Commission info section start-->
+        <div class="container py-3">
+            <div class="center-text-container p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal text-body-emphasis">Commissions</h1>
+                <p class="fs-5 text-body-secondary">Hello! Ill give you a rundown of my commission page. From this page you can choose what
+                kind of commission you want and learn the know how to ask for one plus knowing the rules
+                of my service.</p>
+            </div>
+        
+        <!--Commission info section end-->
+        <!--Term cards start-->
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Payment</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="./assets/mascot-test.jpeg" alt="peep" width="100rem" height="100rem">
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Only Zelle & Paypal</li>
+                            <li>50% Downpayment</li>
+                            <li>Prices vary</li>
+                            <li>No refunds*</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Selection</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="./assets/mascot-test.jpeg" alt="peep" width="100rem" height="100rem">
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Character or Landscape:</li>
+                            <li>(Sketch, Lineart, </li>
+                            <li>Lineart/wColor, or painterly)</li>
+                            <li>additions are extra**</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">Process</h4>
+                    </div>
+                    <div class="card-body">
+                    <img src="./assets/mascot-test.jpeg" alt="peep" width="100rem" height="100rem">
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Upon start: Month max duration</li>
+                            <li>Communicate with client</li>
+                            <li>Pay recieved before delivery</li>
+                            <li>2 free revitions</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--Term cards end-->
+        <!--Explore Section start-->
+        <div class="single-section-bl">
+            <div class="single-container container-custom gap-5 ">
+                
+                <div class="icon-container">
+                    <div class="icon"><img src="./assets/mascot-test.jpeg" alt="peep" width="175" height="175"></div>
+                </div>
+                <div class="text-box-center col-md-4">
+                        <h1>COMMISSIONS ARE OPEN!</h1>
+                </div>
+                <div class="icon-container">
+                    <div class="icon"><img src="./assets/mascot-test.jpeg" alt="peep" width="175" height="175"></div>
+                </div>
+            </div>
+        </div>
+        <!--Explore Section end-->
+        <!--Commission Section start-->
+        <div class="single-section">
+            <div class="single-container container-custom gap-5 ">
+                <div class="text-box">
+                    <div class="header">
+                        <h1>Commission sheets</h1>
+                    </div>
+                    <div class="text">
+                        <p>Here's a indepth example of how my commission prices and terms.
+                        </p>
+                    </div>
+                    <a href="./commission.html"><button type="button" class="btn btn-outline-warning btn-lg">Request A
+                            Commission</button></a>
+                </div>
+                <div class="row mt-4">
+                    <!--Image box-->
+                    <div class="item col-sm-6 col-md-4 mb-3">
+                        <a href="./assets/commission-prices.jpeg" class="fancybox" data-fancybox="gallery1">
+                            <img src="./assets/commission-prices.jpeg" width="100%" height="100%" alt="test" loading="lazy">
+                        </a>
+                    </div>
+                    <!--Image box end-->
+                    <!--Image box-->
+                    <div class="item col-sm-6 col-md-4 mb-3">
+                        <a href="./assets/commission-wexamples.jpeg" class="fancybox" data-fancybox="gallery1">
+                            <img src="./assets/commission-wexamples.jpeg" width="100%" height="100%" alt="test" loading="lazy">
+                        </a>
+                    </div>
+                    <!--Image box end-->
+                </div>
+                <div></div>
+        
+            </div>
+        </div>
+        <!--Commission Section end-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>
