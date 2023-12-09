@@ -377,3 +377,14 @@ a {
     margin-bottom: 1rem;
     font-weight: 600;
 }
+
+.socials-container {
+    display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 1rem;
+}
+
+.social-icon {
+    height: 2rem;
+}
