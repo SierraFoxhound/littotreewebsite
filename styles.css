@@ -386,6 +386,7 @@ a {
 }
 
 .social-icon {
+    cursor: pointer;
     height: 2rem;
 }
 
