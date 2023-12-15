@@ -306,6 +306,12 @@ a {
     display: flex;
     justify-content: center;
 }
+.single-section-bl-ns {
+    padding: 4rem 0 0rem 0;
+    background-color: #CCCCFF;
+    display: flex;
+    justify-content: center;
+}
 
 .single-section {
     padding: 4rem 0 2rem 0;
@@ -354,6 +360,9 @@ a {
 
 .icon-caption h3{
     color: rgb(227, 174, 40);
+}
+.icon-caption{
+    color: white;
 }
 
 /*Commission page*/
