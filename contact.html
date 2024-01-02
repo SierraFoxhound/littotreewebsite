@@ -115,20 +115,20 @@
     </div>
     <!--Contact description Section end-->
     <!--Form section start-->
-    <div class="container mt-5">
+    <div class="container py-3 my-5">
         <h1>Contact Form</h1>
-        <form class="row g-3" action="mail.php" method="POST">
+        <form class="row g-3 py-3 my-4" action="./mail.php" name="form" method="post">
             <div class="col-md-6">
                 <label for="name" class="form-label" >Name</label>
-                <input type="text" class="form-control" id="name" required>
+                <input type="text" class="form-control" name="name" required>
             </div>
             <div class="col-md-6">
-                <label for="emailInfo" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="emailInfo" required>
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" name="email" required>
             </div>
             <div class="col-md-6">
                 <label for="subject" class="form-label">Subject</label>
-                <input class="form-control" placeholder="Subject" id="subject" required>
+                <input class="form-control" placeholder="Subject" name="subject" required>
             </div>
             <div class="col-md-6">
                 <label for="category">Select a Category</label>
@@ -139,8 +139,8 @@
                 </select>
             </div>
             <div class="col-md-6">
-                <label for="message-box">Comments</label>
-                <textarea class="form-control" placeholder="Your message here" id="message-box"
+                <label for="message">Comments</label>
+                <textarea class="form-control" placeholder="Your message here" name="message"
                     style="height: 100px" required></textarea>
                 
             </div>
@@ -150,7 +150,35 @@
         </form>
     </div>
     <!--Form section end-->
-
+    <!--Footer Section start-->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary">© 2023 Litto Tree, All rights reserved.</p>
+    
+            <a href="/"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <img src="./assets/logo-an-slow.PNG" alt="logo" loading="lazy" class="logo-pic">
+            </a>
+    
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="https://sites.google.com/view/lupe-solis-portfolio/home?authuser=0"
+                        class="nav-link px-2 text-body-secondary">Portfolio</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle link-dark" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./commission.html">Commissions</a></li>
+                        <li><a class="dropdown-item" href="./irrigation.html">Red Bubble</a></li>
+                        <li><a class="dropdown-item" href="./welding.html">Tee Spring</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+            </ul>
+        </footer>
+    </div>
+    <!--Footer Section end-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
