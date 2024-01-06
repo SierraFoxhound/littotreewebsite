@@ -513,3 +513,9 @@ a {
         height: 375px;
     }
 }
+
+/*link color*/
+
+.link:hover {
+    opacity: 50%;
+}
