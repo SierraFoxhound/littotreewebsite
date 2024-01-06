@@ -577,17 +577,24 @@
         </div>
         <div class="">
             <form class="row g-3 py-3 my-4" action="https://formsubmit.co/81232a6ee998a831e422f759ef829459" method="POST" enctype="multipart/form-data">
+                <!--Honeypot-->
+                <input type="text" name="_honey" style="display: none;">
+
+                <!--Disable Captcha-->
+
+                <input type="hidden" name="_next" value="./index.html">
+
                 <div class="col-md-6">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" name="name" required>
+                    <input type="text" class="form-control" name="Name" required>
                 </div>
                 <div class="col-md-6">
                     <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" name="email" required>
+                    <input type="email" class="form-control" name="Email" required>
                 </div>
                 <div class="col-md-6">
                     <label for="category">Character or Environment</label>
-                    <select class="form-select" id="category" name="Category or Environment" aria-label="Floating label select example" required>
+                    <select class="form-select" id="category" name="Category&nbsp;or&nbsp;Environment" aria-label="Floating label select example" required>
                         <option selected disabled value="">Select an option</option>
                         <option value="Character Bust">Character Bust</option>
                         <option value="Character Half Body">Character Half Body</option>
@@ -597,7 +604,7 @@
                 </div>
                 <div class="col-md-6">
                     <label for="subCategory">Style</label>
-                    <select class="form-select" id="subCategory" name="Sub Category" aria-label="Floating label select example" required>
+                    <select class="form-select" id="subCategory" name="Sub&nbsp;Category" aria-label="Floating label select example" required>
                         <option selected disabled value="">Select an option</option>
                         <option value="sketch">Sketch</option>
                         <option value="lineart">Lineart</option>
@@ -607,7 +614,7 @@
                 </div>
                 <div class="col-md-6">
                     <label for="addBackground">Additional Background (Character Only) Extra $</label>
-                    <select class="form-select" id="addBackground" name="Add background?" aria-label="Floating label select example" required>
+                    <select class="form-select" id="addBackground" name="Add&nbsp;background?" aria-label="Floating label select example" required>
                         <option selected disabled value="">Select an option</option>
                         <option value="noBackground">No Background</option>
                         <option value="lineart">Simple Background (one or two solid colors)</option>
@@ -616,7 +623,7 @@
                 </div>
                 <div class="col-md-6">
                     <label for="extraCharacters">Additional Characters Extra $</label>
-                    <select class="form-select" id="extraCharacters" name="Extra characters?" aria-label="Floating label select example" required>
+                    <select class="form-select" id="extraCharacters" name="Extra&nbsp;characters?" aria-label="Floating label select example" required>
                         <option selected disabled value="">Select an option</option>
                         <option value="noECharacter">No Extra Characters</option>
                         <option value="yesECharacter">Extra Characters</option>
@@ -626,7 +633,7 @@
                     <label for="addmessage">Additional box ONLY (If none, write NA)</label>
                     <textarea class="form-control" 
                     placeholder="Aditional Characters, Backgrounds, or NA" 
-                    name="addmessage" style="height: 100px"
+                    name="Message&nbsp;box&nbsp;for&nbsp;Addons" style="height: 100px"
                         required></textarea>
         
                 </div>
@@ -634,7 +641,7 @@
                     <label for="message">Commission Request Box</label>
                     <textarea class="form-control" 
                     placeholder="Describe what do you want for your Commission" 
-                    name="message"
+                    name="Commission&nbsp;message&nbsp;box"
                         style="height: 100px" required></textarea>
                 
                 </div>
@@ -642,7 +649,7 @@
                     <label for="basic-url" class="form-label">Reference Img URL</label>
                     <div class="input-group">
                         <span class="input-group-text" id="basic-addon3">Link 1</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                        <input type="text" class="form-control" name="Reference&nbsp;link&nbsp;1" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
                     </div>
                     <div class="form-text" id="basic-addon4">Link directly to reference img or google drive.</div>
                 </div>
@@ -650,7 +657,7 @@
                     <label for="basic-url" class="form-label">Reference Img URL</label>
                     <div class="input-group">
                         <span class="input-group-text" id="basic-addon3">Link 2</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                        <input type="text" class="form-control" name="Reference&nbsp;link&nbsp;2" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
                     </div>
                     <div class="form-text" id="basic-addon4">Link directly to reference img or google drive.</div>
                 </div>
@@ -658,7 +665,7 @@
                     <label for="basic-url" class="form-label">Reference Img URL</label>
                     <div class="input-group">
                         <span class="input-group-text" id="basic-addon3">Link 3</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                        <input type="text" class="form-control" name="Reference&nbsp;link&nbsp;3" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
                     </div>
                     <div class="form-text" id="basic-addon4">Link directly to reference img or google drive.</div>
                 </div>
@@ -666,7 +673,7 @@
                     <label for="basic-url" class="form-label">Reference Img URL</label>
                     <div class="input-group">
                         <span class="input-group-text" id="basic-addon3">Link 4</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                        <input type="text" class="form-control" name="Reference&nbsp;link&nbsp;4" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
                     </div>
                     <div class="form-text" id="basic-addon4">Link directly to reference img or google drive.</div>
                 </div>
@@ -674,7 +681,7 @@
                     <label for="basic-url" class="form-label">Reference Img URL</label>
                     <div class="input-group">
                         <span class="input-group-text" id="basic-addon3">Link 5</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                        <input type="text" class="form-control" name="Reference&nbsp;link&nbsp;5" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
                     </div>
                     <div class="form-text" id="basic-addon4">Link directly to reference img or google drive.</div>
                 </div>
@@ -682,7 +689,7 @@
                     <label for="basic-url" class="form-label">Reference Img URL</label>
                     <div class="input-group">
                         <span class="input-group-text" id="basic-addon3">Link 6</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                        <input type="text" class="form-control" name="Reference&nbsp;link&nbsp;6" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
                     </div>
                     <div class="form-text" id="basic-addon4">Link directly to reference img or google drive.</div>
                 </div>
@@ -690,7 +697,7 @@
                     <label for="basic-url" class="form-label">Reference Img URL</label>
                     <div class="input-group">
                         <span class="input-group-text" id="basic-addon3">Link 7</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                        <input type="text" class="form-control" name="Reference&nbsp;link&nbsp;7" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
                     </div>
                     <div class="form-text" id="basic-addon4">Link directly to reference img or google drive.</div>
                 </div>
@@ -698,7 +705,7 @@
                     <label for="basic-url" class="form-label">Reference Img URL</label>
                     <div class="input-group">
                         <span class="input-group-text" id="basic-addon3">Link 8</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                        <input type="text" class="form-control" name="Reference&nbsp;link&nbsp;8" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
                     </div>
                     <div class="form-text" id="basic-addon4">Link directly to reference img or google drive.</div>
                 </div>
@@ -706,7 +713,7 @@
                     <label for="basic-url" class="form-label">Reference Img URL</label>
                     <div class="input-group">
                         <span class="input-group-text" id="basic-addon3">Link 9</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                        <input type="text" class="form-control" name="Reference&nbsp;link&nbsp;9" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
                     </div>
                     <div class="form-text" id="basic-addon4">Link directly to reference img or google drive.</div>
                 </div>
@@ -714,7 +721,7 @@
                     <label for="basic-url" class="form-label">Reference Img URL</label>
                     <div class="input-group">
                         <span class="input-group-text" id="basic-addon3">Link 10</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                        <input type="text" class="form-control" name="Reference&nbsp;link&nbsp;10" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
                     </div>
                     <div class="form-text" id="basic-addon4">Link directly to reference img or google drive.</div>
                 </div>
