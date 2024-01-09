@@ -117,25 +117,31 @@
     <!--Form section start-->
     <div class="container py-3 my-5">
         <h1>Contact Form</h1>
-        <form class="row g-3 py-3 my-4" action="./mail.php" name="form" method="post">
+        <form class="row g-3 py-3 my-4" action="https://formsubmit.co/81232a6ee998a831e422f759ef829459" name="form" method="POST">
+            <!--Honeypot-->
+            <input type="text" name="_honey" style="display: none;">
+            
+            
+            
+            <input type="hidden" name="_next" value="https://sierrafoxhound.github.io/littotreewebsite/successContact.html">
             <div class="col-md-6">
                 <label for="name" class="form-label" >Name</label>
-                <input type="text" class="form-control" name="name" required>
+                <input type="text" class="form-control" name="Name" required>
             </div>
             <div class="col-md-6">
                 <label for="email" class="form-label">E-mail</label>
-                <input type="email" class="form-control" name="email" required>
+                <input type="email" class="form-control" name="Email" required>
             </div>
             <div class="col-md-6">
                 <label for="subject" class="form-label">Subject</label>
-                <input class="form-control" placeholder="Subject" name="subject" required>
+                <input class="form-control" placeholder="Subject" name="Subject" required>
             </div>
             <div class="col-md-6">
                 <label for="category">Select a Category</label>
                 <select class="form-select" id="category" aria-label="Floating label select example" required>
                     <option selected>Select an option</option>
-                    <option value="1">General Email</option>
-                    <option value="2">Business inquiries</option>
+                    <option value="General&nbsp;Email">General Email</option>
+                    <option value="Business&nbsp;inquiries">Business inquiries</option>
                 </select>
             </div>
             <div class="col-md-6">
