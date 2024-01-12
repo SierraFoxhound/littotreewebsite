@@ -266,7 +266,7 @@ a {
     z-index: 10;
     height: 100%;
     object-fit: cover;
-    object-position: -150px center;
+    object-position: center;
 }
 
 .card-logo, .front-image {
@@ -458,6 +458,10 @@ a {
     color: white;
 }
 
+.price-bullet {
+    text-align: center;
+    list-style-position: inside;
+}
 /*Banner*/
 
 .banner-img{
@@ -469,14 +473,14 @@ a {
 @media (min-width: 200px) {
     .banner-img {
         width: 300px;
-        height: 175px;
+        height: 100px;
     }
 }
 
 @media (min-width: 400px) {
     .banner-img {
         width: 380px;
-        height: 175px;
+        height: 140px;
     }
 }
 
@@ -526,4 +530,24 @@ a {
 
 .link:hover {
     opacity: 50%;
+}
+
+
+/*background color*/
+.bl-background{
+    background-color: #CCCCFF;
+}
+.bl-op-background{
+    background-color: #E8E8FF;
+}
+
+/*text color*/
+.green-text{
+    color: green;
+    font-weight: bold;
+}
+
+.red-text{
+    color: red;
+    font-weight: bold;
 }
