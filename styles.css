@@ -87,7 +87,7 @@ a {
 /*Hero header bottom Start  Bootstrap*/
 .hero {
     position: relative;
-    height: 90vh;
+    height: 83vh;
     background-color: var(--primary-color);
     overflow: hidden;
 }
@@ -210,7 +210,7 @@ a {
     align-items: center;
     place-content: center;
     gap: 18px;
-    min-height: 100vh;
+    min-height: 50vh;
     perspective: 1000px;
     flex-wrap: wrap;
 }
