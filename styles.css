@@ -70,9 +70,23 @@ a:hover {
 
 /*main-end*/
 
-.logo-pic {
+.logo-pic, .logo-pic-nav {
     width: 10rem;
     height: 10rem;
+}
+
+@media (max-width: 200px) {
+    .logo-pic-nav {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo-pic-nav {
+        width: 5rem;
+        height: 5rem;
+    }
 }
 
 a {
@@ -87,7 +101,7 @@ a {
 /*Hero header bottom Start  Bootstrap*/
 .hero {
     position: relative;
-    height: 83vh;
+    height: 80vh;
     background-color: var(--primary-color);
     overflow: hidden;
 }
@@ -324,10 +338,12 @@ a {
     justify-content: center;
 }
 .single-section-bl-ns {
-    padding: 4rem 0 0rem 0;
+    padding: 2rem 0 0rem 0;
     background-color: #CCCCFF;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .single-section {
@@ -397,7 +413,26 @@ a {
     max-width: 700px;
 }
 
-/*About us*/
+/*About me*/
+
+.profile-pic{
+    width: 350px;
+    height: 350px;
+}
+
+@media (max-width: 200px) {
+    .profile-pic {
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .profile-pic {
+        width: 15rem;
+        height: 15rem;
+    }
+}
 
 .section__text__p1 {
     font-weight: 600;
@@ -416,6 +451,11 @@ a {
 .socials-container {
     display: flex;
         justify-content: center;
+        margin-top: 1rem;
+        gap: 1rem;
+}
+.socials-container-hero {
+    display: flex;
         margin-top: 1rem;
         gap: 1rem;
 }
