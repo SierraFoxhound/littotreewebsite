@@ -289,7 +289,7 @@ a {
 
 .card-logo {
     z-index: 1000;
-    filter: invert(1);
+    /*filter: invert(1);*/
     width: 65%;
     margin-inline: auto;
     inset: auto 0 2rem;
