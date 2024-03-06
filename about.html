@@ -1,283 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Litto Tree</title>
-    <link rel="icon" href="./assets/logo-simple.jpeg">
+    <link rel="icon" href="./assets/logo-simple.jpeg" />
     <!--Main Stylesheet-->
-    <link href="./styles.css" rel="stylesheet" type="text/css">
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
     <!--Bootstrap Css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <!--Bootstrap Icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <!--Lightbox css-->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+    />
     <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!--Secondary Icons-->
-    <script src="https://kit.fontawesome.com/39d7944e82.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/39d7944e82.js"
+      crossorigin="anonymous"
+    ></script>
     <!--jQuery Library-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <!--Lightbox script-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
     <style>
-        body {
-            font-family: "Cabin", sans-serif;
-        }
+      body {
+        font-family: "Cabin", sans-serif;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container justify-content-center ">
-    
-            <a class="navbar-brand" href="./index.html">
-                <img class="logo-pic-nav" src="./assets/logo-an-slow.PNG" alt="Logo">
-            </a>
-    
-    
-        </div>
-    
+      <div class="container justify-content-center">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            class="logo-pic-nav"
+            src="./assets/logo-an-slow.PNG"
+            alt="Logo"
+          />
+        </a>
+      </div>
     </nav>
     <!--Start of nav bar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom  ">
-        <div class="container">
-    
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#links-bs"
-                aria-controls="links-bs" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center " id="links-bs"> <!--OLD: class=links-->
-                <ul class="navbar-nav gap-4">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="window.open('https://sites.google.com/view/lupe-solis-portfolio/home?authuser=0')" href="">Portfolio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./commission.html">Commissions</a></li>
-                            <li><a class="dropdown-item" href="https://www.redbubble.com/people/littotree/shop">Red Bubble</a></li>
-                            <li><a class="dropdown-item"
-                                    href="https://my-store-e7a72c.creator-spring.com/?_ga=2.67892953.939781417.1704831672-803020623.1704831672">Teespring</a>
-                            </li>
-                            <li><a class="dropdown-item"
-                                    href="https://www.teepublic.com/user/litto-tree?utm_source=designer&utm_medium=social&utm_campaign=Q6hQrHkKhfI">Teepublic</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./about.html">About me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#links-bs"
+          aria-controls="links-bs"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="links-bs"
+        >
+          <!--OLD: class=links-->
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                onclick="window.open('https://sites.google.com/view/lupe-solis-portfolio/home?authuser=0')"
+                href=""
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Services</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./commission.html"
+                    >Commissions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.redbubble.com/people/littotree/shop"
+                    >Red Bubble</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://my-store-e7a72c.creator-spring.com/?_ga=2.67892953.939781417.1704831672-803020623.1704831672"
+                    >Teespring</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.teepublic.com/user/litto-tree?utm_source=designer&utm_medium=social&utm_campaign=Q6hQrHkKhfI"
+                    >Teepublic</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./about.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-    </nav><!--End of navbar-->
+      </div>
+    </nav>
+    <!--End of navbar-->
     <!--Me section start-->
     <div class="container">
-        <div class="text-center">
-            <div class="py-5">
-                <img src="./assets/about-profile-2png.png" alt="Profile pic" class="profile-pic">
-            </div>
-            <div>
-                <p class="fs-5 text-body-secondary section__text__p1">Hello, I'm</p>
-                <h1 class="title">Guadalupe Solis</h1>
-                <p class="section__text__p2 text-body-secondary">Digital Artist</p>
-                <div class="btn-container">
-                    <button 
-                    type="button" class="btn btn-outline-dark btn rounded-4" 
-                    onclick="window.open('./assets/resume-solis-6.pdf')">
-                            View Resume</button>
-                    <a href="./contact.html"><button type="button" class="btn btn-dark btn rounded-4">
-                            Contact me</button></a>
-                </div>
-                <div class="socials-container">
-                    <img src="./assets/icon-artstation.png" alt="my ArtStation profile" class="social-icon"
-                        onclick="location.href='https://www.artstation.com/guadalupesolis'" />
-                    <img src="./assets/icon-linkedin.png" alt="my LinkedIn profile" class="social-icon"
-                        onclick="location.href='https://www.linkedin.com/in/guadalupe-solis-679116205/'" />
-                    <img src="./assets/icon-insta-4.png" alt="my Instagram profile" class="social-icon"
-                        onclick="location.href='https://www.instagram.com/littotree/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=='" />
-                    <!--<img src="./assets/icon-webtoon.png" alt="my Webtoon profile" class="social-icon"
-                        onclick="location.href='#'" />-->
-                </div>
-            </div>
+      <div class="text-center">
+        <div class="py-5">
+          <img
+            src="./assets/about-profile-2png.png"
+            alt="Profile pic"
+            class="profile-pic"
+          />
         </div>
+        <div>
+          <p class="fs-5 text-body-secondary section__text__p1">Hello, I'm</p>
+          <h1 class="title">Guadalupe Solis</h1>
+          <p class="section__text__p2 text-body-secondary">Digital Artist</p>
+          <div class="btn-container">
+            <button
+              type="button"
+              class="btn btn-outline-dark btn rounded-4"
+              onclick="window.open('./assets/resume-solis-6.pdf')"
+            >
+              View Resume
+            </button>
+            <a href="./contact.html"
+              ><button type="button" class="btn btn-dark btn rounded-4">
+                Contact me
+              </button></a
+            >
+          </div>
+          <div class="socials-container">
+            <img
+              src="./assets/icon-artstation.png"
+              alt="my ArtStation profile"
+              class="social-icon"
+              onclick="location.href='https://www.artstation.com/guadalupesolis'"
+            />
+            <img
+              src="./assets/icon-linkedin.png"
+              alt="my LinkedIn profile"
+              class="social-icon"
+              onclick="location.href='https://www.linkedin.com/in/guadalupe-solis-679116205/'"
+            />
+            <img
+              src="./assets/icon-insta-4.png"
+              alt="my Instagram profile"
+              class="social-icon"
+              onclick="location.href='https://www.instagram.com/littotree/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=='"
+            />
+            <!--<img src="./assets/icon-webtoon.png" alt="my Webtoon profile" class="social-icon"
+                        onclick="location.href='#'" />-->
+          </div>
+        </div>
+      </div>
     </div>
     <!--Me section end-->
     <!--About section start-->
     <div class="container py-3">
-        <div class="start-text-container p-3 pb-md-4 mx-auto text-start">
-            <h1 class="display-4 fw-normal text-body-emphasis">About</h1>
-            <p class="fs-5 text-body-secondary">
-                Greetings, I am Littotree!
-                <br><br>
-                I am a digital artist who specializes in environments and characters. I am constantly trying different art styles and
-                learning new methods of art skills. I enjoy creating concept art for my projects, and I am currently working on a video
-                game that is based on my art. My goal is to make art that brings feelings of nostalgia to the young and old!
-                <br><br>
-                Feel free to join me on my journey to create!
-                <br><br>
-                Please follow my social media to stay up-to-date on my work.
-
-
+      <div class="start-text-container p-3 pb-md-4 mx-auto text-start">
+        <h1 class="display-4 fw-normal text-body-emphasis">About</h1>
+        <p class="fs-5 text-body-secondary">
+          Greetings, I am Littotree!
+          <br /><br />
+          I am a digital artist who specializes in environments and
+          characters.Recently I worked on a live film project as the lead
+          concept artist and background painter for WILD 7 Studios (2024). I am
+          constantly trying different art styles and learning new methods of art
+          skills. I enjoy creating concept art for my projects, and I am
+          currently working on a video game that is based on my art. My goal is
+          to make art that brings feelings of nostalgia to the young and old!
+          <br /><br />
+          Feel free to join me on my journey to create!
+          <br /><br />
+          Please follow my social media to stay up-to-date on my work.
         </p>
-        </div>
+      </div>
     </div>
     <!--About section end-->
     <!--Skills section start-->
     <div class="container py-3 border-top border-primary-subtle">
-        <div class="start-text-container p-3 pb-md-4 mx-auto text-start">
-            <h1 class="display-4 fw-normal text-body-emphasis">Skills</h1>
-            <span class="skill-border">Environment Design</span>
-            <span class="skill-border">Character Design</span>
-            <span class="skill-border">Background Layout & Painting</span>
-            <span class="skill-border">Prop Design</span>
-            <span class="skill-border">2D Animation</span>
-            <span class="skill-border">UI Design</span>
-            <span class="skill-border">3D Modeling</span>
-            <span class="skill-border">Visual Development</span>
-            <span class="skill-border">Illustration</span>
-            <span class="skill-border">Production Design</span>
-            <span class="skill-border">Concept Art</span>
-            <span class="skill-border">Photography</span>
-            <span class="skill-border">Graphic Design</span>
-            <span class="skill-border">Doll Fabrication</span>
-            
-        </div>
+      <div class="start-text-container p-3 pb-md-4 mx-auto text-start">
+        <h1 class="display-4 fw-normal text-body-emphasis">Skills</h1>
+        <span class="skill-border">Environment Design</span>
+        <span class="skill-border">Character Design</span>
+        <span class="skill-border">Background Layout & Painting</span>
+        <span class="skill-border">Prop Design</span>
+        <span class="skill-border">2D Animation</span>
+        <span class="skill-border">UI Design</span>
+        <span class="skill-border">3D Modeling</span>
+        <span class="skill-border">Visual Development</span>
+        <span class="skill-border">Illustration</span>
+        <span class="skill-border">Production Design</span>
+        <span class="skill-border">Concept Art</span>
+        <span class="skill-border">Photography</span>
+        <span class="skill-border">Graphic Design</span>
+        <span class="skill-border">Doll Fabrication</span>
+      </div>
     </div>
     <!--Skills section end-->
     <!--Software section start-->
     <div class="container py-3 border-top border-primary-subtle">
-        <div class="start-text-container p-3 pb-md-4 mx-auto text-start">
-            <h1 class="display-4 fw-normal text-body-emphasis">Software</h1>
-            <div class="software-container">
-                <div class="software-item gap-3 col-6">
-                    <img width="30" height="30" alt="Photoshop" class="about-software-icon"
-                    src="https://cdna.artstation.com/p/softwares/icons/000/000/032/default/Photoshop.png?1608144074">
-                    <div class="about-software-name">Photoshop</div>
-                </div>
-                <div class="software-item gap-3 col-6">
-                    <img width="30" height="30" alt="Procreate" class="about-software-icon"
-                    src="https://cdnb.artstation.com/p/softwares/icons/000/000/183/default/Icon.png?1487948438">
-                    <div class="about-software-name">Procreate</div>
-                </div>
-                <div class="software-item gap-3 col-6">
-                    <img width="30" height="30" alt="Adobe Animate" class="about-software-icon"
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAgVBMVEUAAFuZmf////+env+bm/8AAFYAAFAAAFkAAFMzM38AAEkWFmRAQImYmPtYWKcAAE2Li+sVFV5OTpyhof+Dg+Ht7fGKiqJbW4MKCl709Pd4eJXn5+wbG19qar+dnbPGxtEAAEV8fNa7u8omJmhycskfH2kPD14vL2pFRZJgYLIqKnYNnJc5AAADVUlEQVRoge2abXOiMBDHk+YBRDEcQaXtUR+qVv3+H/BCk00CWvSAvLg5/zOdKWJ+bjab3dWAXqwWu+Xqs0QDVH6ulruFIyL4Z73igkVD0LUiJvhq3YIvVoINBYOYWC18+I6Phv7G852DfyRjomslHwAfn23oCr4OwFb0dQ1/jUOwEYpfFfwtFPztBb2LMGyExDtaBjJcmb5Ev0OxkUKPunuaCoh+6qn/XcxpfPYktxrcE7TFC0mMZD627Tyj2IgWY9dBji0c0+m4jmETadmYzMctKGLvDFd+GbcUxqkHx+Qwpl/YiWAffh7TL8YrdJ9qv2SbOwOiv5jaUXuFzArtHXJpDmZc65sbJ+J4mArx4OzYSZoYPGv3kKqxpGxWaTEUJdNzkdba5o/hky013riYT8kamzSeS1pL5sllK4n6D6s/kuaPRBUDe7kwUUMmPp3l+g20mhM/ZMl+c5cdm7HyEnET73TPfbgNpkZQqRHVXduFXkaaCouh1M8vrUj1g3Z2J8lFB89aEzdYnrxRbPYTnGZ3klw8J84Ks7aYbr1RbOLB1UpS53h56Y74BLxyRN7afV9dw6ksqnOV2WsVBJ1emUrfVmHSI8ldFDs42R8TtZk2Z3jhTvKPYeNompmH+iwXCBZO5on2QlKRh5yemBoktaWwApgcrTcdHIIjOoDlaVe4RBPamB/Ejl8yruFugv7aXImDV4DFYZhLjTfgvAJ4V020lZkLrY31i42yG3DwXic8MqkKpwUIPo2cIcr6wnllg8oKXsjA6X3holE8m7K7ryf856yBvd3XE95oKdqieDPM8g6vKL+YktEPzmayg62SsBgAFybBeqHiBwxNyyFwm5COvzzZjUV0yegFh+Td7mshJUBq7AW3ZaeVlCHFqzu8Lzw6QCPR7plNyYYk3wcOLQWWZesNNqnrOfWBg33X/bhN6pjW3XQfeGlj5arpc36p7/WAu7lftweeX3gvuMjMjslu9GSlNDfr1Ki+MZkLH2622214mRnlN1rhZGvvqr75ABeuOJ1S/Urxwy/wpqO//Yt07N+N4MJZyWLvC8FTTz311D+roMcKQQ9Egh7lBD2ECnp8FvbgL+iRZdjD1rDHxGEPuMMezYd9qAAeh/ga9jjEV/NxiD+AszofBeDfmAAAAABJRU5ErkJggg==">
-                    <div class="about-software-name">Adobe Animate</div>
-                </div>
-                <div class="software-item gap-3 col-6">
-                    <img width="30" height="30" alt="Clip Studio" class="about-software-icon"
-                    src="https://upload.wikimedia.org/wikipedia/en/thumb/6/66/Clip_Studio_Paint_app_logo.png/120px-Clip_Studio_Paint_app_logo.png">
-                    <div class="about-software-name">Clip Studio</div>
-                </div>
-                <div class="software-item gap-3 col-6">
-                    <img width="30" height="30" alt="Microsoft Office" class="about-software-icon"
-                    src="https://cdn-icons-png.flaticon.com/512/732/732222.png">
-                    <div class="about-software-name">Microsoft Office</div>
-                </div>
-                <div class="software-item gap-3 col-6">
-                    <img width="30" height="30" alt="Lightroom" class="about-software-icon"
-                    src="https://cdnb.artstation.com/p/softwares/icons/000/000/233/default/Lightroom.png?1608147118">
-                    <div class="about-software-name">Lightroom</div>
-                </div>
-                <div class="software-item gap-3 col-6">
-                    <img width="30" height="30" alt="Toonboom" class="about-software-icon"
-                    src="data:image/png;base64,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">
-                    <div class="about-software-name">Toonboom</div>
-                </div>
-                <div class="software-item gap-3 col-6">
-                    <img width="30" height="30" alt="Stroyboard Pro" class="about-software-icon"
-                    src="https://img.softwaresblue.com/upload/icons/toon-boom-storyboard-pro220-220.jpg">
-                    <div class="about-software-name">Storyboard Pro</div>
-                </div>
-                <div class="software-item gap-3 col-6">
-                    <img width="30" height="30" alt="Premiere Pro" class="about-software-icon"
-                    src="https://cdnb.artstation.com/p/softwares/icons/000/000/125/default/premiere-pro.png?1608144421">
-                    <div class="about-software-name">Premiere Pro</div>
-                </div>
-                <div class="software-item gap-3 col-6">
-                    <img width="30" height="30" alt="Adobe After Effects" class="about-software-icon"
-                    src="	https://cdnb.artstation.com/p/softwares/icons/000/000/003/default/aftereffects.png?1608144443">
-                    <div class="about-software-name">Adobe After Effects</div>
-                </div>
-                <div class="software-item gap-3 col-6">
-                    <img width="30" height="30" alt="Illustrator" class="about-software-icon"
-                    src="https://cdnb.artstation.com/p/softwares/icons/000/000/019/default/illustrator.png?1608143969">
-                    <div class="about-software-name">Illustrator</div>
-                </div>
-                <div class="software-item gap-3 col-6">
-                    <img width="30" height="30" alt="Maya" class="about-software-icon"
-                    src="	https://cdna.artstation.com/p/softwares/icons/000/000/024/default/maya.png?1504879343">
-                    <div class="about-software-name">Maya</div>
-                </div>
-                <div class="software-item gap-3 col-6">
-                    <img width="30" height="30" alt="Blender" class="about-software-icon"
-                    src="https://cdna.artstation.com/p/softwares/icons/000/000/008/default/blender_icon_1024x1024.png?1570478232">
-                    <div class="about-software-name">Blender</div>
-                </div>
-                <div class="software-item gap-3 col-6">
-                    <img width="30" height="30" alt="Z-Brush" class="about-software-icon"
-                    src="https://cdn.icon-icons.com/icons2/512/PNG/512/zbrush_icon-icons.com_50712.png">
-                    <div class="about-software-name">Z-Brush</div>
-                </div>
-                <div class="software-item gap-3 col-6">
-                    <img width="30" height="30" alt="Substance Painter" class="about-software-icon"
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOMAAADeCAMAAAD4tEcNAAAAwFBMVEUeMQGZ6D////+V4j0JFQAbLQCf8UKd7kGb60AnPgcXJwAxTQ0dLwBUgR8TIQAQHgAZKgB8vTGQ2zsgMwAAFQAPHAAAHQAXLAAIJAANGQBwqiwVJAB2tC8UKgAAIADf4dwAEQAqPBNcjCJjlyZRXESFjH0AFwBbZU9CZhaJ0TdJcRqCxjRQex1royktSAvAw7yZn5IyQh9GUzgAAACnrKHj5eE/Ti43VhBlmyc9XxNgalZ1fW3R082OlYd8hHMACgAUWDRcAAAIhUlEQVR4nO2ce1+iTBSAAeUaISqKSiiprZcUtS2trfT7f6sXvBTKGZSSy8w7z1/7W1PP49zPzMBwZ3iZzdeD5T2TR+6X/ff5rHNOgYl68WPet516wzb5rG0QqKbdqBv15efHzxw7D22jYatZa1yC2TDaD+jiRDnOBk4j69DjoDac/iyW42xh2FlHHRvbWMCWkGPnyTCzDvhHmMYT1DABx4e/eBr6mH8fLnDsLNpZB/or2otQ53Pq+OzgW4g7TOc52vHdyDrEK+Csoxz7eNfTA/UB2vEJqyExgkYf5UiMoif5BDsOyFE8Lslvx/d61nFdlfZ72PGZhB41yJ/nU8fOJuuYrs7m48RxgfvQH8asHjt+kjEwHtNeBx0JrKk+m07AsY/favESzKdvxxlpfeoBY/bluCSvw9lhLg6OxBbjviB9xwGZrdHHHuwcX8gtRm8t2dk6fpI0Fz+l8bl1rOY1C34NVNN37DhZx5EoXmVluDmJ07hv2nPPkdA5zgG77zmS3OP42BzTIXnk8DE6zIysFEeY+oyZk15XG3NmTXaX47XHNTMgdc1xwBwwSyx2w3+BumTyeWLjmpBvSKFQKBQKhUKhUCiUDFH38Dyv+yhH6Dqv4p1dUDwzpuohu667ensbDsfjya1Hd8ft7Xi4kqtKraQpmO4W1R4llhWFAGIY7z8Lo8fp5KZZ+r2nmvovVSx4jpcgSZ4sW+66NetnFVfldUsr1XR5lbZksXCZ4sFUFEZduanH+AaVVyyt1mzKb5NeqzwqCIKVmA1MTMetplh+u9hS88pt6+a/T5Qkr9YIzUSNwsR39DWFx7fiRTVWuyuIwt7tQKGYtNQJP3L0Lcuydv7T9bEQfmsFi3Lchip1zxel1RPDbxxh4+i1q0f+XKvUWuFeW3qspWL2zS8cWbHinukit6Mv1o5efR1GN8pmBXAsl1JyO/ArR68ox5GSDjDBkO4wc2SFoRLx6Xq4W/UcL+iQr8pvHVnWRU/N+BvIsYWdo1RBh6wPw0MHjo6s2EKOd8oEcBSn+Dl6TRI1TCpdyPE1/3PyEFIF1VFa0xw77hbNkj+VLrDbSXWUpNBFRA1Nc1ixlwtHcby6cV1X9mFkdzV5LbNChGcBMXMp3eXXUZB1nufVr1SWYtWc1bQioCyFW3iQhKZyrNiNGlFTdAyvKHitNK4AzcsHtZRojvBy9FCKrwhJ8QacCEDTVVZEFHpyxHH0gh7Dkidt7FDJtQr0txNFDZA7R0aDZi5+ZQ30OrxSPQB3aHw1gBon/5WKI1PrAlNQL/DvSPkbsKhRSG+JpyLjOjJFqK/0CudLUrkFfwUUKTTP2I78ClIINEjlFtEx4eMIF2RgcU+CI+gQGCFJcFRlqEEWiCpHpgaN7OzXy0Q4lsqQ49dbiHDUoNWE5JLlCK4K/weOEll1FVz5EtYewZUvWyXKsQStmMgaH1WZ/HkOPJcr1yJfx8wRnJMHkt/KZJu03AJaSUeg8l1ZOurw2ioQafWufACSlMrHuImnO2I71qBcGysEk1ZaaUdThn4OwW2WgiSf0Ynr6EDpfUQWGdyaO/45UiGmY7EHJjLg/W8sHXmnBedq4M4RQ0e1djNCJcqr0Btwc1SVptxCDAbB0TEIRo6qbpVq7qQsIsd24Q1MBOfbsbopHnAUd9i9q0RtQaK2dHLtyIpiYc92h1VEVdJ91IjN8nw7xkJ6RBx6IMhRRJ3QIcdR6KHOohDjKJaRx4pJcZQqPHJuS4ijxMroPVIyHCV2FbHCJcJRKrhRi3gSHMVRNXIznwBHoVWMjhZ7R5Edn7vDgLmjJE71s/k0rB1F8c6tnc814esoCYVXuXZJnHg6St46+W5oaZflC7FzlCRRkEbTYa108eGvfDvurujus/Xbf7Kjcm9YrVlxTrfl2lHsdbu96bS147U7fpObzZKlx0xp59pRqGqWZWl7LEVHry2iyLdj5B7rxVDH9KCOv4M6pkcGjvl4zkOyjvDmSIKk7yhO8n2/Ix4Ix3zcm0vUEbk9khhJOqouuLN+pU+/nAwcJfTuQTIk6giervdvMG+s7SxfVfm4a5mfkKQjoyMW4GLldeVfsazK7jiFipuoI3yDYGspSP4mtSQIKdykT9QRvkFwRBpPtkjUUYMPnhHlqCOuhJLkCD6ThDTHJni8nizH8/c98XdkrHMpahIc4evLRDkyRfBoNlmO/A35jow1jKytRDgy2jjq1CQZjozloo5os+k8pQx8xuyVV+p86ZWFj/imck2H0e4qYcrX/l6N71VOHzLkb2xWWsM0ElgaxNW/RbW04XQkBZ6xzI5at25JSzvXmiy61my6w+3jsifjlVxsYvuc7GhU/9HnlvLTTVsKhUKhUCgUCoVCoVAoFAqFkhn3WQeQAousA0ice2ZJenJWXTL/zKyDSBhzwDzYWQeRMPYDM29kHUTCNObMrJ51EAlTnzEvTtZBJIzRYTib7I5VtTmGG5Dd6dgDz3HezjqMRGnPPceOk3UYieJ0PEfunshd9j38Pec7El1ZvarqO778yTqQBDFeto4k96xer7pz/HCyDiUxnI+9I7ckde1hLrmD48zIOpiEMGZfjlyfzBZp97lvx5dN1uEkwuYl4Mh9kjhGtj+5oCO3IK/bMRfcsSOBs9ZN58SReyatbzWeuVNHbk1W0qO+5sKO3D+S+p1Gn4McuT45KTp7ycGOXJ+UkmwEFY8duQEZbbL9xKEdubWTdXxX4M87F+XIPTu4TwbMzZyLduQ6C7wbZfu+c6oUcvTmrn/xXYWYfx/CQoAj1+ljWmFN4ylUiAhHb9G8NPArS9tYzkAb2NGz7DsNnDZC1IbThw3Rjl6N/bSdNhYbPqrdduxPqJaec/Q1533bqDdsM6+mqmk36obdn6MFzzluPWfzh8Einydc7heD9XwW6efzH/uYwGG5wU8KAAAAAElFTkSuQmCC">
-                    <div class="about-software-name">Substance Painter</div>
-                </div>
-            </div>
+      <div class="start-text-container p-3 pb-md-4 mx-auto text-start">
+        <h1 class="display-4 fw-normal text-body-emphasis">Software</h1>
+        <div class="software-container">
+          <div class="software-item gap-3 col-6">
+            <img
+              width="30"
+              height="30"
+              alt="Photoshop"
+              class="about-software-icon"
+              src="https://cdna.artstation.com/p/softwares/icons/000/000/032/default/Photoshop.png?1608144074"
+            />
+            <div class="about-software-name">Photoshop</div>
+          </div>
+          <div class="software-item gap-3 col-6">
+            <img
+              width="30"
+              height="30"
+              alt="Procreate"
+              class="about-software-icon"
+              src="https://cdnb.artstation.com/p/softwares/icons/000/000/183/default/Icon.png?1487948438"
+            />
+            <div class="about-software-name">Procreate</div>
+          </div>
+          <div class="software-item gap-3 col-6">
+            <img
+              width="30"
+              height="30"
+              alt="Adobe Animate"
+              class="about-software-icon"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAgVBMVEUAAFuZmf////+env+bm/8AAFYAAFAAAFkAAFMzM38AAEkWFmRAQImYmPtYWKcAAE2Li+sVFV5OTpyhof+Dg+Ht7fGKiqJbW4MKCl709Pd4eJXn5+wbG19qar+dnbPGxtEAAEV8fNa7u8omJmhycskfH2kPD14vL2pFRZJgYLIqKnYNnJc5AAADVUlEQVRoge2abXOiMBDHk+YBRDEcQaXtUR+qVv3+H/BCk00CWvSAvLg5/zOdKWJ+bjab3dWAXqwWu+Xqs0QDVH6ulruFIyL4Z73igkVD0LUiJvhq3YIvVoINBYOYWC18+I6Phv7G852DfyRjomslHwAfn23oCr4OwFb0dQ1/jUOwEYpfFfwtFPztBb2LMGyExDtaBjJcmb5Ev0OxkUKPunuaCoh+6qn/XcxpfPYktxrcE7TFC0mMZD627Tyj2IgWY9dBji0c0+m4jmETadmYzMctKGLvDFd+GbcUxqkHx+Qwpl/YiWAffh7TL8YrdJ9qv2SbOwOiv5jaUXuFzArtHXJpDmZc65sbJ+J4mArx4OzYSZoYPGv3kKqxpGxWaTEUJdNzkdba5o/hky013riYT8kamzSeS1pL5sllK4n6D6s/kuaPRBUDe7kwUUMmPp3l+g20mhM/ZMl+c5cdm7HyEnET73TPfbgNpkZQqRHVXduFXkaaCouh1M8vrUj1g3Z2J8lFB89aEzdYnrxRbPYTnGZ3klw8J84Ks7aYbr1RbOLB1UpS53h56Y74BLxyRN7afV9dw6ksqnOV2WsVBJ1emUrfVmHSI8ldFDs42R8TtZk2Z3jhTvKPYeNompmH+iwXCBZO5on2QlKRh5yemBoktaWwApgcrTcdHIIjOoDlaVe4RBPamB/Ejl8yruFugv7aXImDV4DFYZhLjTfgvAJ4V020lZkLrY31i42yG3DwXic8MqkKpwUIPo2cIcr6wnllg8oKXsjA6X3holE8m7K7ryf856yBvd3XE95oKdqieDPM8g6vKL+YktEPzmayg62SsBgAFybBeqHiBwxNyyFwm5COvzzZjUV0yegFh+Td7mshJUBq7AW3ZaeVlCHFqzu8Lzw6QCPR7plNyYYk3wcOLQWWZesNNqnrOfWBg33X/bhN6pjW3XQfeGlj5arpc36p7/WAu7lftweeX3gvuMjMjslu9GSlNDfr1Ki+MZkLH2622214mRnlN1rhZGvvqr75ABeuOJ1S/Urxwy/wpqO//Yt07N+N4MJZyWLvC8FTTz311D+roMcKQQ9Egh7lBD2ECnp8FvbgL+iRZdjD1rDHxGEPuMMezYd9qAAeh/ga9jjEV/NxiD+AszofBeDfmAAAAABJRU5ErkJggg=="
+            />
+            <div class="about-software-name">Adobe Animate</div>
+          </div>
+          <div class="software-item gap-3 col-6">
+            <img
+              width="30"
+              height="30"
+              alt="Clip Studio"
+              class="about-software-icon"
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/6/66/Clip_Studio_Paint_app_logo.png/120px-Clip_Studio_Paint_app_logo.png"
+            />
+            <div class="about-software-name">Clip Studio</div>
+          </div>
+          <div class="software-item gap-3 col-6">
+            <img
+              width="30"
+              height="30"
+              alt="Microsoft Office"
+              class="about-software-icon"
+              src="https://cdn-icons-png.flaticon.com/512/732/732222.png"
+            />
+            <div class="about-software-name">Microsoft Office</div>
+          </div>
+          <div class="software-item gap-3 col-6">
+            <img
+              width="30"
+              height="30"
+              alt="Lightroom"
+              class="about-software-icon"
+              src="https://cdnb.artstation.com/p/softwares/icons/000/000/233/default/Lightroom.png?1608147118"
+            />
+            <div class="about-software-name">Lightroom</div>
+          </div>
+          <div class="software-item gap-3 col-6">
+            <img
+              width="30"
+              height="30"
+              alt="Toonboom"
+              class="about-software-icon"
+              src="data:image/png;base64,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"
+            />
+            <div class="about-software-name">Toonboom</div>
+          </div>
+          <div class="software-item gap-3 col-6">
+            <img
+              width="30"
+              height="30"
+              alt="Stroyboard Pro"
+              class="about-software-icon"
+              src="https://img.softwaresblue.com/upload/icons/toon-boom-storyboard-pro220-220.jpg"
+            />
+            <div class="about-software-name">Storyboard Pro</div>
+          </div>
+          <div class="software-item gap-3 col-6">
+            <img
+              width="30"
+              height="30"
+              alt="Premiere Pro"
+              class="about-software-icon"
+              src="https://cdnb.artstation.com/p/softwares/icons/000/000/125/default/premiere-pro.png?1608144421"
+            />
+            <div class="about-software-name">Premiere Pro</div>
+          </div>
+          <div class="software-item gap-3 col-6">
+            <img
+              width="30"
+              height="30"
+              alt="Adobe After Effects"
+              class="about-software-icon"
+              src="	https://cdnb.artstation.com/p/softwares/icons/000/000/003/default/aftereffects.png?1608144443"
+            />
+            <div class="about-software-name">Adobe After Effects</div>
+          </div>
+          <div class="software-item gap-3 col-6">
+            <img
+              width="30"
+              height="30"
+              alt="Illustrator"
+              class="about-software-icon"
+              src="https://cdnb.artstation.com/p/softwares/icons/000/000/019/default/illustrator.png?1608143969"
+            />
+            <div class="about-software-name">Illustrator</div>
+          </div>
+          <div class="software-item gap-3 col-6">
+            <img
+              width="30"
+              height="30"
+              alt="Maya"
+              class="about-software-icon"
+              src="	https://cdna.artstation.com/p/softwares/icons/000/000/024/default/maya.png?1504879343"
+            />
+            <div class="about-software-name">Maya</div>
+          </div>
+          <div class="software-item gap-3 col-6">
+            <img
+              width="30"
+              height="30"
+              alt="Blender"
+              class="about-software-icon"
+              src="https://cdna.artstation.com/p/softwares/icons/000/000/008/default/blender_icon_1024x1024.png?1570478232"
+            />
+            <div class="about-software-name">Blender</div>
+          </div>
+          <div class="software-item gap-3 col-6">
+            <img
+              width="30"
+              height="30"
+              alt="Z-Brush"
+              class="about-software-icon"
+              src="https://cdn.icon-icons.com/icons2/512/PNG/512/zbrush_icon-icons.com_50712.png"
+            />
+            <div class="about-software-name">Z-Brush</div>
+          </div>
+          <div class="software-item gap-3 col-6">
+            <img
+              width="30"
+              height="30"
+              alt="Substance Painter"
+              class="about-software-icon"
+              src="data:image/png;base64,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"
+            />
+            <div class="about-software-name">Substance Painter</div>
+          </div>
         </div>
+      </div>
     </div>
     <!--Software section end-->
     <!--Footer Section start-->
     <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <p class="col-md-4 mb-0 text-body-secondary">© 2024 Litto Tree, All rights reserved.</p>
-    
-            <a href="./index.html"
-                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <img src="./assets/logo-an-slow.PNG" alt="logo" loading="lazy" class="logo-pic">
-            </a>
-    
-            <ul class="nav col-md-4 justify-content-end">
-                <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="" onclick="window.open('https://sites.google.com/view/lupe-solis-portfolio/home?authuser=0')" class="nav-link px-2 text-body-secondary">Portfolio</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle link-dark" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Services</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./commission.html">Commissions</a></li>
-                        <li><a class="dropdown-item" href="https://www.redbubble.com/people/littotree/shop">Red Bubble</a></li>
-                        <li><a class="dropdown-item"
-                                href="https://my-store-e7a72c.creator-spring.com/?_ga=2.67892953.939781417.1704831672-803020623.1704831672">Teespring</a>
-                        </li>
-                        <li><a class="dropdown-item"
-                                href="https://www.teepublic.com/user/litto-tree?utm_source=designer&utm_medium=social&utm_campaign=Q6hQrHkKhfI">Teepublic</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-body-secondary">About</a></li>
-                <li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-body-secondary">Contact</a></li>
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-body-secondary">
+          © 2024 Litto Tree, All rights reserved.
+        </p>
+
+        <a
+          href="./index.html"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <img
+            src="./assets/logo-an-slow.PNG"
+            alt="logo"
+            loading="lazy"
+            class="logo-pic"
+          />
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link px-2 text-body-secondary"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href=""
+              onclick="window.open('https://sites.google.com/view/lupe-solis-portfolio/home?authuser=0')"
+              class="nav-link px-2 text-body-secondary"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle link-dark"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Services</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="./commission.html"
+                  >Commissions</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://www.redbubble.com/people/littotree/shop"
+                  >Red Bubble</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://my-store-e7a72c.creator-spring.com/?_ga=2.67892953.939781417.1704831672-803020623.1704831672"
+                  >Teespring</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://www.teepublic.com/user/litto-tree?utm_source=designer&utm_medium=social&utm_campaign=Q6hQrHkKhfI"
+                  >Teepublic</a
+                >
+              </li>
             </ul>
-        </footer>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link px-2 text-body-secondary"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link px-2 text-body-secondary"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </footer>
     </div>
     <!--Footer Section end-->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
