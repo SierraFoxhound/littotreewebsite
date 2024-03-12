@@ -324,12 +324,44 @@ a {
     display: flex;
     justify-content: center;
 }
+
+.single-section-bl-tos {
+    padding: 4rem 3rem 2rem 3rem;
+    background-color: #CCCCFF;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 770px) {
+    .single-section-bl-tos {
+            padding: 4rem 0rem 2rem 0rem;
+            background-color: #CCCCFF;
+            display: flex;
+            justify-content: center;
+        }
+}
+
 .single-section-bl-op {
     padding: 4rem 0 2rem 0;
     background-color: #E8E8FF;
     display: flex;
     justify-content: center;
 }
+
+.single-section-bl-op-tos {
+    padding: 4rem 3rem 2rem 3rem;
+    background-color: #E8E8FF;
+    justify-content: center;
+}
+
+@media (max-width: 770px) {
+    .single-section-bl-op-tos {
+            padding: 4rem 0rem 2rem 0rem;
+            background-color: #E8E8FF;
+            justify-content: center;
+        }
+}
+
 .single-section-bl-op-col {
     padding: 4rem 0 2rem 0;
     background-color: #E8E8FF;
@@ -353,6 +385,22 @@ a {
     justify-content: center;
 }
 
+.single-section-tos {
+    padding: 4rem 3rem 2rem 3rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 770px) {
+    .single-section-tos {
+            padding: 4rem 0 2rem 0;
+    
+            display: flex;
+            justify-content: center;
+        }
+}
+
 .single-container {
     display: flex;
     justify-content: center;
@@ -363,6 +411,22 @@ a {
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 10rem;
+}
+
+.single-container-start-tos {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+
+@media (max-width: 770px) {
+    .single-container-start-tos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10rem;
+        }
 }
 
 .single-container-extra {
@@ -524,6 +588,35 @@ a {
     list-style-position: inside;
 }
 
+.header-tos {
+    width: 30%;
+}
+
+@media (max-width: 770px) {
+    .header-tos {
+            width: 50%;
+        }
+}
+
+.bullet-point-container-tos {
+    width: 60%;
+}
+
+@media (max-width: 770px) {
+    .bullet-point-container-tos {
+            width: 90%;
+        }
+}
+
+.bullet-point-container-tos-2 {
+    width: 79%;
+}
+
+@media (max-width: 770px) {
+    .bullet-point-container-tos-2 {
+        width: 90%;
+    }
+}
 
 /*Banner*/
 
